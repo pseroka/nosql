@@ -12,7 +12,7 @@ zbiór danych: https://www.kaggle.com/silicon99/dft-accident-data
   <thead>
     <tr>
       <th>Nazwa</th>
-      <th>Wartosć</th>
+      <th>Wartość</th>
     </tr>
   </thead>
   <tbody>
@@ -34,7 +34,7 @@ zbiór danych: https://www.kaggle.com/silicon99/dft-accident-data
     </tr>
     <tr>
       <td>Baza danych</td>
-      <td>TODO</td>
+      <td>**[UK Car Accidents 2005-2015](https://www.kaggle.com/silicon99/dft-accident-data)**</td>
     </tr>
   </tbody>
 </table>
