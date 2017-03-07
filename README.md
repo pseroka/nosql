@@ -34,7 +34,7 @@ zbiór danych: https://www.kaggle.com/silicon99/dft-accident-data
     </tr>
     <tr>
       <td>Baza danych</td>
-      <td>**[UK Car Accidents 2005-2015](https://www.kaggle.com/silicon99/dft-accident-data)**</td>
+      <td><a href="https://www.kaggle.com/silicon99/dft-accident-data"><b>UK Car Accidents 2005-2015</b></a></td>
     </tr>
   </tbody>
 </table>
