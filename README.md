@@ -124,6 +124,18 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <h6>Import danych z pliku CSV</h6>
 <code>\copy myschema.crimes FROM 'C:/Users/PC/Desktop/crimes.csv' DELIMITER ',' CSV</code>
 
+<h6>Zliczenie ilości zaimportowanych rekordów</h6>
+<code>SELECT COUNT(*) FROM myschema.crimes;</code>
+
+<h6>Liczba rekordów</h6>
+<code>1000977</code>
+
+<h6>Obliczenie czasu importu danych</h6>
+<code>\timing \copy myschema.crimes FROM 'C:/Users/PC/Desktop/crimes.csv' DELIMITER ',' CSV</code>
+
+<h6>Czas importu danych</h6>
+<code>13749,464 ms</code>
+
 
 ## MongoDB
 
