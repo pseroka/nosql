@@ -121,8 +121,8 @@ Schema -- przygotować i użyć w trakcie importu danych.
 	Lat varchar 
 );</code>
 
-### Import danych
-
+<h6>Import danych z pliku CSV</h6>
+<code>\copy myschema.crimes FROM 'C:/Users/PC/Desktop/crimes.csv' DELIMITER ',' CSV</code>
 
 
 ## MongoDB
