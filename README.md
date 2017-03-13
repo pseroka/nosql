@@ -96,9 +96,30 @@ Liczymy ile czasu to zajęło.
 
 
 
-## PostgresSQL
+## PostgreSQL
 
 Schema -- przygotować i użyć w trakcie importu danych.
+
+<h6>Utworzenie schematu</h6>
+<code>CREATE SCHEMA myschema;</code>
+
+<h6>Utworzenie tabeli</h6>
+<code>CREATE TABLE myschema.crimes (
+	Dc_Dist varchar,
+	Psa varchar,
+	Dispatch_Date_Time varchar, 
+	Dispatch_Date varchar,  
+	Dispatch_Time varchar, 
+	Hour varchar, 
+	Dc_Key varchar, 
+	Location_Block varchar, 
+	UCR_General varchar, 
+	Text_General_Code varchar, 
+	Police_Districts varchar,
+	Month varchar, 
+	Lon varchar, 
+	Lat varchar 
+);</code>
 
 ### Import danych
 
