@@ -144,4 +144,5 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 <h6>Utworzenie bazy danych</h6>
 <code>use nosql</code>
 
-### Import danych
+<h6>Import danych z pliku CSV</h6>
+<code>mongoimport -d nosql -c crimes --type csv --file C:\Users\PC\Desktop\crimes_m.csv --headerline</code>
