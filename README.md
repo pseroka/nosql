@@ -105,20 +105,20 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 <h6>Utworzenie tabeli</h6>
 <code>CREATE TABLE myschema.crimes (
-	Dc_Dist varchar,
-	Psa varchar,
-	Dispatch_Date_Time varchar, 
-	Dispatch_Date varchar,  
-	Dispatch_Time varchar, 
-	Hour varchar, 
-	Dc_Key varchar, 
-	Location_Block varchar, 
-	UCR_General varchar, 
-	Text_General_Code varchar, 
-	Police_Districts varchar,
-	Month varchar, 
-	Lon varchar, 
-	Lat varchar 
+Dc_Dist integer, 
+Psa varchar, 
+Dispatch_Date_Time varchar, 
+Dispatch_Date date,  
+Dispatch_Time varchar,  
+Hour integer,  
+Dc_Key varchar,  
+Location_Block varchar,  
+UCR_General varchar, 
+Text_General_Code varchar, 
+Police_Districts varchar, 
+Month varchar, 
+Lon varchar, 
+Lat varchar 
 );</code>
 
 <h6>Import danych z pliku CSV</h6>
@@ -138,7 +138,7 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 <h5>Agregacja 1. Rozkład liczby przestępstw w latach</h5>
 <code>SELECT COUNT(*), EXTRACT(year FROM Dispatch_Date) AS year FROM myschema.crimes GROUP BY year HAVING EXTRACT(year FROM Dispatch_Date) >= 2006 ORDER BY year ASC;</code>
-<br>
+<br><br>
 <table>
   <thead>
     <tr>
@@ -190,6 +190,48 @@ Schema -- przygotować i użyć w trakcie importu danych.
     <tr>
       <td>2016</td>
       <td>843</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Agregacja 2. 7 dzielnic z liczbą przestępstw większą niż 50000</h5>
+<code>SELECT Dc_Dist, COUNT(*) AS ile FROM myschema.crimes GROUP BY Dc_Dist HAVING COUNT(*) > 50000 ORDER BY ile ASC LIMIT 7;</code>
+<br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Numer dzielnicy</th>
+      <th>Liczba przestępstw</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>50591</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>52684</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>57684</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>59032</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>59574</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>62856</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>63642</td>
     </tr>
   </tbody>
 </table>
