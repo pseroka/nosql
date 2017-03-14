@@ -141,4 +141,7 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
+<h6>Utworzenie bazy danych</h6>
+<code>use nosql</code>
+
 ### Import danych
