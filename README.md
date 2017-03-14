@@ -146,3 +146,9 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
 <h6>Import danych z pliku CSV</h6>
 <code>mongoimport -d nosql -c crimes --type csv --file C:\Users\PC\Desktop\crimes_m.csv --headerline</code>
+
+<h6>Zliczenie ilości zaimportowanych rekordów</h6>
+<code>db.crimes.count()</code>
+
+<h6>Liczba rekordów</h6>
+<code>1000977</code>
