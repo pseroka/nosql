@@ -136,6 +136,63 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <h6>Czas importu danych</h6>
 <code>13749,464 ms</code>
 
+<h5>Agregacja 1. Rozkład liczby przestępstw w latach</h5>
+<code>SELECT COUNT(*), EXTRACT(year FROM Dispatch_Date) AS year FROM myschema.crimes GROUP BY year HAVING EXTRACT(year FROM Dispatch_Date) >= 2006 ORDER BY year ASC;</code>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Rok</th>
+      <th>Liczba</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2006</td>
+      <td>7055</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>290</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>70794</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>199262</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>195359</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>196603</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>186339</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>50643</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>93541</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>843</td>
+    </tr>
+  </tbody>
+</table>
 
 ## MongoDB
 
