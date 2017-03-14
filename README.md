@@ -152,3 +152,9 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
 <h6>Liczba rekordów</h6>
 <code>1000977</code>
+
+<h6>Obliczenie czasu importu danych</h6>
+<code>powershell "Measure-Command{mongoimport -d nosql -c crimes --type csv --file C:\Users\PC\Desktop\crimes_m.csv --headerline}"</code>
+
+<h6>Czas importu danych</h6>
+<code>59460,6697 ms</code>
