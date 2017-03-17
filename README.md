@@ -262,3 +262,9 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
 <h6>Import danych z pliku JSON</h6>
 <code>mongoimport -d nosql -c twitchjson streamers.json</code>
+
+<h6>Zliczenie ilości zaimportowanych rekordów</h6>
+<code>db.twitchjson.count()</code>
+
+<h6>Liczba rekordów</h6>
+<code>36</code>
