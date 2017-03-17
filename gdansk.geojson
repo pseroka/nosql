@@ -1,0 +1,110 @@
+{"type":"FeatureCollection","features":[ 
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "willywonka_hc",
+                        "geo" : "NO",
+                        "viewers" : "838"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                10.74609,
+                                59.91273
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "guardsmanbob",
+                        "geo" : "DK",
+                        "viewers" : "1136"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                12.56553,
+                                55.67594
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "officialfriberg",
+                        "geo" : "SE",
+                        "viewers" : "4203"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                18.0649,
+                                59.33258
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "savjz",
+                        "geo" : "FI",
+                        "viewers" : "4298"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                24.93545,
+                                60.16952
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "brunecia",
+                        "geo" : "PL",
+                        "viewers" : "2309"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                21.01178,
+                                52.22977
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#f00",
+                        "marker-size" : "medium",
+                        "marker-symbol" : "",
+                        "channel_login" : "der_frost",
+                        "geo" : "AT",
+                        "viewers" : "3"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                16.37208,
+                                48.20849
+                        ]
+                }
+        }
+]}
