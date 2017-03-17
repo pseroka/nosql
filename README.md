@@ -268,3 +268,28 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
 <h6>Liczba rekordów</h6>
 <code>36</code>
+
+<h6>Przykładowy rekord</h6>
+<code>db.twitchjson.findOne()</code>
+
+<--wkleić obrazek-->
+
+<code>{
+        "_id" : ObjectId("58cbbfdb89f63fa5435978b4"),
+        "type" : "Feature",
+        "properties" : {
+                "marker-color" : "#f00",
+                "marker-size" : "medium",
+                "marker-symbol" : "",
+                "channel_login" : "sing_sing",
+                "geo" : "NL",
+                "viewers" : "17281"
+        },
+        "geometry" : {
+                "type" : "Point",
+                "coordinates" : [
+                        "4.8896900",
+                        "52.3740300"
+                ]
+        }
+}</code>
