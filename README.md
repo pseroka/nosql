@@ -257,3 +257,8 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
 
 <h6>Czas importu danych</h6>
 <code>59460,6697 ms</code>
+
+<h2>Mapy</h2>
+
+<h6>Import danych z pliku JSON</h6>
+<code>mongoimport -d nosql -c twitchjson streamers.json</code>
