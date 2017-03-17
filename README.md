@@ -293,3 +293,5 @@ Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
                 ]
         }
 }</code>
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/ameryka.PNG)
