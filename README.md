@@ -404,6 +404,10 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 <h2>Mapy</h2>
 
+Do stworzenia mapy GeoJSON wykorzystałam narzędzie, które znajduje się pod adresem: http://geojson.io. Na potrzeby zadania za pomocą ![skryptu](https://github.com/pseroka/nosql/blob/master/geojson.js) napisanego w JavaScript wyznaczyłam 36 unikalnych rekordów ze streamerami z różnych krajów i zaznaczyłam je na mapie odmiennymi kolorami według schematu: kolor niebieski - Ameryka Północna, kolor zielony - Ameryka Południowa, kolor czerwony - Europa, kolor żółty - Azja, kolor różowy - Australia i Oceania.
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/streamers.PNG)
+
 <h6>Import danych z pliku JSON</h6>
 <code>mongoimport -d nosql -c twitchjson streamers.json</code>
 
