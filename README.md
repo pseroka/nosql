@@ -320,10 +320,10 @@ Schema -- przygotować i użyć w trakcie importu danych.
 </table>
 
 <h5>Agregacja 2. 7 streamerów z największą liczbą widzów</h5>
-<code>SELECT channel_login, MAX(viewers) AS viewers FROM myschema.twitch GROUP BY channel_login ORDER BY viewers DESC LIMIT 7;</code>
+<code>SELECT channel_login, MAX(viewers) AS viewers, category FROM myschema.twitch GROUP BY channel_login, category ORDER BY viewers DESC LIMIT 7;</code>
 
 <h6>Czas wykonania zapytania</h6>
-<code>959,132 ms</code>
+<code>15174,471 ms</code>
 
 <h6>Wynik zapytania</h6>
 <br>
@@ -332,36 +332,44 @@ Schema -- przygotować i użyć w trakcie importu danych.
     <tr>
       <th>Streamer</th>
       <th>Liczba widzów</th>
+      <th>Kategoria</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>speeddemosarchivesda</td>
       <td>77075</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>phantoml0rd</td>
       <td>52764</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>nightblue3</td>
       <td>38106</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>nl_kripp</td>
       <td>29350</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>rekkles</td>
       <td>27964</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>beyondthesummit</td>
       <td>22992</td>
+      <td>gaming</td>
     </tr>
     <tr>
       <td>bestrivenna</td>
       <td>21373</td>
+      <td>gaming</td>
     </tr>
   </tbody>
 </table>
