@@ -406,6 +406,8 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 Do stworzenia mapy GeoJSON wykorzystałam narzędzie, które znajduje się pod adresem: http://geojson.io. Na potrzeby zadania za pomocą ![skryptu](https://github.com/pseroka/nosql/blob/master/geojson.js) napisanego w JavaScript wyznaczyłam 36 unikalnych rekordów ze streamerami z różnych krajów i zaznaczyłam je na mapie odmiennymi kolorami według schematu: kolor niebieski - Ameryka Północna, kolor zielony - Ameryka Południowa, kolor czerwony - Europa, kolor żółty - Azja, kolor różowy - Australia i Oceania.
 
+![Mapa](https://github.com/pseroka/nosql/blob/master/streamers.geojson)
+
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/streamers.PNG)
 
 <h6>Import danych z pliku JSON</h6>
@@ -436,12 +438,16 @@ Zapytanie dotyczy streamerów, którzy mieszkają w odległości 500 mil (804,67
 
 Wynik zapytania:
 
+![Mapa](https://github.com/pseroka/nosql/blob/master/gdansk.geojson)
+
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/gdansk.PNG)
 
 ## Polygon
 Za pomocą narzędzia http://geojson.io stworzyłam obiekt Polygon o kształcie Ameryki Południowej i za jego pomocą sprawdziłam, którzy streamerzy mieszkają na terenie tego kontynentu.
 
 Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/polygon.txt).
+
+![Mapa](https://github.com/pseroka/nosql/blob/master/ameryka.geojson)
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/polygon.PNG)
 
@@ -455,6 +461,8 @@ Za pomocą narzędzia http://geojson.io stworzyłam obiekt LineString odzwiercie
 Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/linestring.txt).
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring-query.PNG)
+
+![Mapa](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
 
 Wynik zapytania w bazie MongoDB:
 
