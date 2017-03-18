@@ -159,7 +159,7 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <code>748,291 ms</code>
 
 <h6>Wynik zapytania</h6>
-<br><br>
+<br>
 <table>
   <thead>
     <tr>
@@ -319,44 +319,49 @@ Schema -- przygotować i użyć w trakcie importu danych.
   </tbody>
 </table>
 
-<h5>Agregacja 2. 7 dzielnic z liczbą przestępstw większą niż 50000</h5>
-<code>SELECT Dc_Dist, COUNT(*) AS ile FROM myschema.crimes GROUP BY Dc_Dist HAVING COUNT(*) > 50000 ORDER BY ile ASC LIMIT 7;</code>
-<br><br>
+<h5>Agregacja 2. 7 streamerów z największą liczbą widzów</h5>
+<code>SELECT channel_login, MAX(viewers) AS viewers FROM myschema.twitch GROUP BY channel_login ORDER BY viewers DESC LIMIT 7;</code>
+
+<h6>Czas wykonania zapytania</h6>
+<code>959,132 ms</code>
+
+<h6>Wynik zapytania</h6>
+<br>
 <table>
   <thead>
     <tr>
-      <th>Numer dzielnicy</th>
-      <th>Liczba przestępstw</th>
+      <th>Streamer</th>
+      <th>Liczba widzów</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>3</td>
-      <td>50591</td>
+      <td>speeddemosarchivesda</td>
+      <td>77075</td>
     </tr>
     <tr>
-      <td>14</td>
-      <td>52684</td>
+      <td>phantoml0rd</td>
+      <td>52764</td>
     </tr>
     <tr>
-      <td>35</td>
-      <td>57684</td>
+      <td>nightblue3</td>
+      <td>38106</td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>59032</td>
+      <td>nl_kripp</td>
+      <td>29350</td>
     </tr>
     <tr>
-      <td>12</td>
-      <td>59574</td>
+      <td>rekkles</td>
+      <td>27964</td>
     </tr>
     <tr>
-      <td>22</td>
-      <td>62856</td>
+      <td>beyondthesummit</td>
+      <td>22992</td>
     </tr>
     <tr>
-      <td>19</td>
-      <td>63642</td>
+      <td>bestrivenna</td>
+      <td>21373</td>
     </tr>
   </tbody>
 </table>
