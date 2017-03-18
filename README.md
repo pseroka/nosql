@@ -30,7 +30,7 @@ projekt zaliczeniowy
     </tr>
     <tr>
       <td>Baza danych</td>
-      <td><a href="https://www.kaggle.com/silicon99/dft-accident-data"><b>UK Car Accidents 2005-2015</b></a></td>
+      <td><a href="http://dash.ipv6.enstb.fr/dataset/live-sessions/"><b>Twitch Dataset</b></a></td>
     </tr>
   </tbody>
 </table>
@@ -41,64 +41,13 @@ projekt zaliczeniowy
 
 
 ## Przedstawienie danych
-Przykładowy rekord. Ile tego jest/będzie? (w sztukach, w GB)
+Na potrzeby projektu zaimportowałam do PostgreSQL i MongoDB znalezioną w Internecie bazę danych streamerów serwisu Twitch oraz wykonałam na niej szereg zapytań i pomiarów czasu. Dane wymagały obróbki, ponieważ wszystkie pola zawierały cudzysłowy. Należało również każdemu rekordowi przypisać lokalizację, by móc tworzyć do nich zapytania mapkowe. Posłużył mi do tego ![program](https://github.com/pseroka/nosql/blob/master/Program.cs) napisany w języku C#. Wybrałam rekordy z 36 krajów, resztę pominęłam. W obecnym kształcie baza danych posiada 960987 rekordów. Dane o rekordach przechowywane są w 31 kolumnach. Zawierają one m.in. informacje na temat nazwy kanału, ilości widzów oglądających dany stream, lokalizacji streamera, czasu trwania streamu i kategorii.
 
-json
-{
-	"x": "raz dwa trzy".
-	"lation": [23,23].
-}
+<h6>Przykładowy rekord</h6>
 
-
-## Przykładowe zapytania
-
-Czego szukam? (np. restauracje w obrębie iluś km)
-
-## Mapki
-Zapytania mapkowe. (np. Ile jest kuchni chińskich?)
-
-curl localhost:9200/... | jq.hits.hits[] | przerabiamy na GEOJson-a za pomocą programu, który wyszukujemy w Internecie, np. TopoJSON
-pokazujemy wynik i umieszczamy go na mapce
-
-[mapki-es](mapki-es) -- link do mapki
-mapki trzymamy dla porządku w katalogu docs
-
-dokument: mapki-es.html
-<h1>Elasticsearch is Awesome!</h1>
-
-<p>Mapka powstawały jak</p>
-<p>Tytuł</p>
-<p>o co chodzi w zapytaniu</p>
-<-- mapka -->
-
-<p>Tytuł</p>
-<p>o co chodzi w zapytaniu</p>
-<-- mapka -->
-
-Z tych danych zrobię mapki, podsumowania.
-
-Nie zapisywać na dysku.
-
-## Czyszczenie danych
-Zmienić nazwy pól, wybrano te pola i dlaczego.
-
-## Elasticsearch
-
-Mapping -- przygotować i zapisać
-
-### Import danych
-
-sh
-gunzip -c dane.json.gz | ... #całość
-... 		| #próbka / sample
-
-Liczymy ile czasu to zajęło.
-
-
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/przykladowy.PNG)
 
 ## PostgreSQL
-
-Schema -- przygotować i użyć w trakcie importu danych.
 
 <h6>Utworzenie schematu</h6>
 <code>CREATE SCHEMA myschema;</code>
@@ -447,11 +396,11 @@ Za pomocą narzędzia http://geojson.io stworzyłam obiekt Polygon o kształcie 
 
 Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/polygon.txt).
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/ameryka.geojson)
-
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/polygon.PNG)
 
 Wynik zapytania:
+
+![Mapa](https://github.com/pseroka/nosql/blob/master/ameryka.geojson)
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/ameryka.PNG)
 
@@ -462,12 +411,12 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring-query.PNG)
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
-
 Wynik zapytania w bazie MongoDB:
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring-output.PNG)
 
 Wynik zapytania w postaci pliku GeoJSON:
+
+![Mapa](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring.PNG)
