@@ -376,25 +376,27 @@ Schema -- przygotować i użyć w trakcie importu danych.
 
 ## MongoDB
 
-Pamiętać aby DateTime było zaimportowane jako DateTime, liczby - to samo.
-
 <h6>Utworzenie bazy danych</h6>
 <code>use nosql</code>
 
 <h6>Import danych z pliku CSV</h6>
-<code>mongoimport -d nosql -c crimes --type csv --file C:\Users\PC\Desktop\crimes_m.csv --headerline</code>
+<code>mongoimport -d nosql -c twitch --type csv --file C:\Users\PC\Desktop\nosql\twitch.csv --headerline</code>
 
 <h6>Zliczenie ilości zaimportowanych rekordów</h6>
-<code>db.crimes.count()</code>
+<code>db.twitch.count()</code>
 
 <h6>Liczba rekordów</h6>
-<code>1000977</code>
+<code>960987</code>
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/mongo-count.PNG)
 
 <h6>Obliczenie czasu importu danych</h6>
 <code>powershell "Measure-Command{mongoimport -d nosql -c crimes --type csv --file C:\Users\PC\Desktop\crimes_m.csv --headerline}"</code>
 
 <h6>Czas importu danych</h6>
-<code>59460,6697 ms</code>
+<code>88939,597 ms</code>
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/mongo-czas.PNG)
 
 <h2>Mapy</h2>
 
