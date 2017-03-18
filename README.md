@@ -146,11 +146,15 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <h6>Liczba rekordów</h6>
 <code>960987</code>
 
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/psql-count.PNG)
+
 <h6>Obliczenie czasu importu danych</h6>
 <code>\timing \copy myschema.twitch FROM 'C:/Users/PC/Desktop/nosql/twitch.csv' DELIMITER ',' CSV HEADER</code>
 
 <h6>Czas importu danych</h6>
-<code>48025,663 ms</code>
+<code>40422,841 ms</code>
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/psql-czas.PNG)
 
 <h5>Agregacja 1. Liczba streamerów z każdego kraju</h5>
 <code>SELECT geo, COUNT(*) AS ile FROM myschema.twitch GROUP BY geo ORDER BY ile DESC;</code>
