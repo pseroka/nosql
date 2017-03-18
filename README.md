@@ -152,60 +152,169 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <h6>Czas importu danych</h6>
 <code>48025,663 ms</code>
 
-<h5>Agregacja 1. Rozkład liczby przestępstw w latach</h5>
-<code>SELECT COUNT(*), EXTRACT(year FROM Dispatch_Date) AS year FROM myschema.crimes GROUP BY year HAVING EXTRACT(year FROM Dispatch_Date) >= 2006 ORDER BY year ASC;</code>
+<h5>Agregacja 1. Liczba streamerów z każdego kraju</h5>
+<code>SELECT geo, COUNT(*) AS ile FROM myschema.twitch GROUP BY geo ORDER BY ile DESC;</code>
+
+<h6>Czas wykonania zapytania</h6>
+<code>748,291 ms</code>
+
+<h6>Wynik zapytania</h6>
 <br><br>
 <table>
   <thead>
     <tr>
-      <th>Rok</th>
-      <th>Liczba</th>
+      <th>Kraj</th>
+      <th>Liczba streamerów</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>2006</td>
-      <td>7055</td>
+      <td>US</td>
+      <td>417780</td>
     </tr>
     <tr>
-      <td>2007</td>
-      <td>290</td>
+      <td>TW</td>
+      <td>57181</td>
     </tr>
     <tr>
-      <td>2008</td>
-      <td>248</td>
+      <td>DE</td>
+      <td>56129</td>
     </tr>
     <tr>
-      <td>2009</td>
-      <td>70794</td>
+      <td>GB</td>
+      <td>47606</td>
     </tr>
     <tr>
-      <td>2010</td>
-      <td>199262</td>
+      <td>CA</td>
+      <td>43490</td>
     </tr>
     <tr>
-      <td>2011</td>
-      <td>195359</td>
+      <td>None</td>
+      <td>43250</td>
     </tr>
     <tr>
-      <td>2012</td>
-      <td>196603</td>
+      <td>RU</td>
+      <td>38989</td>
     </tr>
     <tr>
-      <td>2013</td>
-      <td>186339</td>
+      <td>SE</td>
+      <td>38623</td>
     </tr>
     <tr>
-      <td>2014</td>
-      <td>50643</td>
+      <td>FR</td>
+      <td>21828</td>
     </tr>
     <tr>
-      <td>2015</td>
-      <td>93541</td>
+      <td>JP</td>
+      <td>16476</td>
     </tr>
     <tr>
-      <td>2016</td>
-      <td>843</td>
+      <td>BR</td>
+      <td>16369</td>
+    </tr>
+    <tr>
+      <td>PL</td>
+      <td>15617</td>
+    </tr>
+    <tr>
+      <td>AU</td>
+      <td>13394</td>
+    </tr>
+    <tr>
+      <td>NL</td>
+      <td>13215</td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>11615</td>
+    </tr>    
+    <tr>
+      <td>ES</td>
+      <td>10344</td>
+    </tr>
+    <tr>
+      <td>NO</td>
+      <td>9857</td>
+    </tr>
+    <tr>
+      <td>DK</td>
+      <td>9856</td>
+    </tr>
+    <tr>
+      <td>FI</td>
+      <td>9583</td>
+    </tr>
+    <tr>
+      <td>MX</td>
+      <td>8726</td>
+    </tr>
+    <tr>
+      <td>UA</td>
+      <td>8534</td>
+    </tr>
+    <tr>
+      <td>KR</td>
+      <td>6790</td>
+    </tr>
+    <tr>
+      <td>BE</td>
+      <td>5992</td>
+    </tr>
+    <tr>
+      <td>AT</td>
+      <td>5402</td>
+    </tr>
+    <tr>
+      <td>IT</td>
+      <td>5288</td>
+    </tr>
+    <tr>
+      <td>PT</td>
+      <td>5224</td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>4830</td>
+    </tr>
+    <tr>
+      <td>CH</td>
+      <td>4178</td>
+    </tr>
+    <tr>
+      <td>CN</td>
+      <td>2982</td>
+    </tr>
+    <tr>
+      <td>CL</td>
+      <td>2844</td>
+    </tr>
+    <tr>
+      <td>NZ</td>
+      <td>1921</td>
+    </tr>
+    <tr>
+      <td>VN</td>
+      <td>1838</td>
+    </tr>
+    <tr>
+      <td>IE</td>
+      <td>1471</td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>1181</td>
+    </tr>
+    <tr>
+      <td>PR</td>
+      <td>1136</td>
+    </tr>
+    <tr>
+      <td>SA</td>
+      <td>996</td>
+    </tr>
+    <tr>
+      <td>PK</td>
+      <td>452</td>
     </tr>
   </tbody>
 </table>
