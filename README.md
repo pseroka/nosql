@@ -434,10 +434,17 @@ Zapytanie dotyczy streamerów, którzy mieszkają w odległości 500 mil (804,67
 
 <code>db.twitchjson.find({geometry: {$geoWithin: {$centerSphere: [[18.6463700,54.3520500],500/3963.2]}}}).toArray()</code>
 
-Wynik zapytania
+Wynik zapytania:
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/gdansk.PNG)
 
 ## Polygon
+Za pomocą narzędzia http://geojson.io stworzyłam obiekt Polygon o kształcie Ameryki Południowej i za jego pomocą sprawdziłam, którzy streamerzy mieszkają na terenie tego kontynentu.
+
+Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/polygon.txt).
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/polygon.PNG)
+
+Wynik zapytania:
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/ameryka.PNG)
