@@ -416,19 +416,27 @@ Do stworzenia mapy GeoJSON wykorzystałam narzędzie, które znajduje się pod a
 
 <h6>Liczba rekordów</h6>
 <code>36</code>
+
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/twitchjson-count.PNG)
 
 <h6>Przykładowy rekord</h6>
 <code>db.twitchjson.findOne()</code>
+
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/twitchjson-example.PNG)
 
 ## Zapytania do bazy danych
-Aby móc tworzyć zapytania do bazy danych należało dodać do stwrzonej wcześniej kolekcji geo-indeks.
+Aby móc tworzyć zapytania do bazy danych należało dodać do stworzonej wcześniej kolekcji geo-indeks.
 
 <code>db.twitchjson.ensureIndex({"geometry" : "2dsphere"})</code>
 
 ## Point
-Zpytanie dotyczy streamerów, którzy zamieszkują w odległości 500 kilometrów od Gdańska.
+Zapytanie dotyczy streamerów, którzy mieszkają w odległości 500 mil (804,672 km) od Gdańska (dł. 18.6463700; szer. 54.3520500).
+
+<code>db.twitchjson.find({geometry: {$geoWithin: {$centerSphere: [[18.6463700,54.3520500],500/3963.2]}}}).toArray()</code>
+
+Wynik zapytania
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/gdansk.PNG)
 
 ## Polygon
 
