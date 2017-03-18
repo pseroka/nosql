@@ -104,37 +104,53 @@ Schema -- przygotować i użyć w trakcie importu danych.
 <code>CREATE SCHEMA myschema;</code>
 
 <h6>Utworzenie tabeli</h6>
-<code>CREATE TABLE myschema.crimes (
-Dc_Dist integer, 
-Psa varchar, 
-Dispatch_Date_Time varchar, 
-Dispatch_Date date,  
-Dispatch_Time varchar,  
-Hour integer,  
-Dc_Key varchar,  
-Location_Block varchar,  
-UCR_General varchar, 
-Text_General_Code varchar, 
-Police_Districts varchar, 
-Month varchar, 
-Lon varchar, 
-Lat varchar 
+<code>CREATE TABLE myschema.twitch (
+	accessed_at_utc DATE, 
+	accessed_at_utc_std DATE, 
+	session_id BIGINT, 
+	channel_id INTEGER,  
+	channel_login VARCHAR,  
+	viewers INTEGER,  
+	geo VARCHAR,  
+	category VARCHAR,  
+	video_bitrate NUMERIC, 
+	uptime VARCHAR, 
+	uptime_sec NUMERIC, 
+	language_channel VARCHAR,
+	language_session VARCHAR,
+	video_height INTEGER,
+	video_width INTEGER,
+	embed_count INTEGER,
+	site_count INTEGER,
+	timezone VARCHAR,
+	session_count INTEGER,
+	video_codec VARCHAR,
+	channel_view_count INTEGER,
+	broadcaster VARCHAR,
+	broadcast_part INTEGER,
+	featured VARCHAR,
+	channel_subscription VARCHAR,
+	audio_codec VARCHAR,
+	producer VARCHAR,
+	mature VARCHAR,
+	lon VARCHAR,
+	lat VARCHAR
 );</code>
 
 <h6>Import danych z pliku CSV</h6>
-<code>\copy myschema.crimes FROM 'C:/Users/PC/Desktop/crimes.csv' DELIMITER ',' CSV</code>
+<code>\copy myschema.twitch FROM 'C:/Users/PC/Desktop/nosql/twitch.csv' DELIMITER ',' CSV HEADER</code>
 
 <h6>Zliczenie ilości zaimportowanych rekordów</h6>
-<code>SELECT COUNT(*) FROM myschema.crimes;</code>
+<code>SELECT COUNT(*) FROM myschema.twitch;</code>
 
 <h6>Liczba rekordów</h6>
-<code>1000977</code>
+<code>960987</code>
 
 <h6>Obliczenie czasu importu danych</h6>
-<code>\timing \copy myschema.crimes FROM 'C:/Users/PC/Desktop/crimes.csv' DELIMITER ',' CSV</code>
+<code>\timing \copy myschema.twitch FROM 'C:/Users/PC/Desktop/nosql/twitch.csv' DELIMITER ',' CSV HEADER</code>
 
 <h6>Czas importu danych</h6>
-<code>13749,464 ms</code>
+<code>48025,663 ms</code>
 
 <h5>Agregacja 1. Rozkład liczby przestępstw w latach</h5>
 <code>SELECT COUNT(*), EXTRACT(year FROM Dispatch_Date) AS year FROM myschema.crimes GROUP BY year HAVING EXTRACT(year FROM Dispatch_Date) >= 2006 ORDER BY year ASC;</code>
