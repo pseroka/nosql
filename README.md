@@ -448,3 +448,18 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 Wynik zapytania:
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/ameryka.PNG)
+
+## LineString
+Za pomocą narzędzia http://geojson.io stworzyłam obiekt LineString odzwierciedlający przebieg Wisły i sprawdziłam, którzy streamerzy mieszkają na przecięciu tego obiektu.
+
+Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/linestring.txt).
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring-query.PNG)
+
+Wynik zapytania w bazie MongoDB:
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring-output.PNG)
+
+Wynik zapytania w postaci pliku GeoJSON:
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring.PNG)
