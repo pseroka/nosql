@@ -420,3 +420,7 @@ Wynik zapytania w postaci pliku GeoJSON:
 ![Mapa](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring.PNG)
+
+## Elasticsearch
+
+![Plik](https://github.com/pseroka/nosql/blob/master/elastic/mapp.json) z wykonanym mappingiem danych.
