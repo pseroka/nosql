@@ -1,0 +1,15 @@
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {} },
+					"filter" : {
+						"geo_bounding_box" : {
+							"coordinates": {
+								"top_left": [-139.921875,68.65655498475735],
+								"bottom_right": [-49.92187499999999,16.29905101458183]
+                    }
+                }
+            }
+    }	}
+}
