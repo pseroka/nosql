@@ -1,0 +1,56 @@
+{"type":"FeatureCollection","features":[ 
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#00f",
+						"marker-size" : "medium",
+						"marker-symbol" : "",
+						"channel_login" : "mushisgosu",
+						"geo" : "CA",
+						"viewers" : "3175"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                -75.69812,
+								45.41117
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#00f",
+						"marker-size" : "medium",
+						"marker-symbol" : "",
+						"channel_login" : "crs_saintvicious",
+						"geo" : "US",
+						"viewers" : "11507"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                -74.00597,
+								40.71427
+                        ]
+                }
+        },
+        {
+                "type" : "Feature",
+                "properties" : {
+                        "marker-color" : "#00f",
+						"marker-size" : "medium",
+						"marker-symbol" : "",
+						"channel_login" : "reebok170",
+						"geo" : "MX",
+						"viewers" : "649"
+                },
+                "geometry" : {
+                        "type" : "Point",
+                        "coordinates" : [
+                                -99.12766,
+								19.42847
+                        ]
+                }
+        }
+]}
