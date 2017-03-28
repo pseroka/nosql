@@ -430,3 +430,6 @@ Wynik zapytania w postaci pliku GeoJSON:
 
 <h6>Ustawienie mapping typu "streamers"</h6>
 <code>curl -XPUT "localhost:9200/twitch/_mapping/streamers" --data-binary @C:\Users\PC\Desktop\nosql\mapp.json</code>
+
+<h6>Import danych z ![pliku]() JSON</h6>
+<code>curl -XPOST "localhost:9200/_bulk" --data-binary @C:/Users/PC/Desktop/nosql/elastic.json</code>
