@@ -1,0 +1,13 @@
+{
+  	"streamers": {
+		"properties": {
+			"marker-color": { "type": "text" },
+			"marker-size": { "type": "text" },
+			"marker-symbol": { "type": "text" },
+			"channel_login": { "type": "text"},
+			"geo": { "type": "text" },
+			"viewers": { "type": "long" },
+			"coordinates": { "type":"geo_point" }
+		}
+	}
+}
