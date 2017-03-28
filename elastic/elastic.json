@@ -1,0 +1,74 @@
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 1 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"sing_sing","geo":"NL","viewers":"17281","coordinates":[4.8896900,52.3740300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 2 } }
+{"marker-color":"#00f","marker-size":"medium","marker-symbol":"","channel_login":"crs_saintvicious","geo":"US","viewers":"11507","coordinates":[-74.0059700,40.7142700]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 3 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"savjz","geo":"FI","viewers":"4298","coordinates":[24.9354500,60.1695200]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 4 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"officialfriberg","geo":"SE","viewers":"4203","coordinates":[18.0649000,59.3325800]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 5 } }
+{"marker-color":"#00f","marker-size":"medium","marker-symbol":"","channel_login":"mushisgosu","geo":"CA","viewers":"3175","coordinates":[-75.6981200,45.4111700]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 6 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"brunecia","geo":"PL","viewers":"2309","coordinates":[21.0117800,52.2297700]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 7 } }
+{"marker-color":"#f0f","marker-size":"medium","marker-symbol":"","channel_login":"joindotared","geo":"AU","viewers":"2266","coordinates":[149.1280700,-35.2834600]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 8 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"filmzer333","geo":"PK","viewers":"2036","coordinates":[73.0432900,33.7214800]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 9 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"dragon","geo":"KR","viewers":"1994","coordinates":[126.9784000,37.5660000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 10 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"furkay","geo":"DE","viewers":"1619","coordinates":[-0.1257400,51.5085300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 11 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"versuta","geo":"UA","viewers":"1568","coordinates":[30.5238000,50.4546600]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 12 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"narkuss_lol","geo":"FR","viewers":"1406","coordinates":[2.3488000,48.8534100]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 13 } }
+{"marker-color":"#0f0","marker-size":"medium","marker-symbol":"","channel_login":"bigp4nda","geo":"BR","viewers":"1257","coordinates":[-47.9297200,-15.7797200]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 14 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"guardsmanbob","geo":"DK","viewers":"1136","coordinates":[12.5655300,55.6759400]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 15 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"inmateoo","geo":"RU","viewers":"874","coordinates":[37.6155600,55.7522200]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 16 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"willywonka_hc","geo":"NO","viewers":"838","coordinates":[10.7460900,59.9127300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 17 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"milicua","geo":"ES","viewers":"750","coordinates":[-3.7025600,40.4165000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 18 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"arconai309","geo":"TW","viewers":"688","coordinates":[121.5318500,25.0477600]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 19 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"millbee","geo":"GB","viewers":"686","coordinates":[-0.1257400,51.5085300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 20 } }
+{"marker-color":"#00f","marker-size":"medium","marker-symbol":"","channel_login":"reebok170","geo":"MX","viewers":"649","coordinates":[-99.1276600,19.4284700]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 21 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"qbixxxxx","geo":"CH","viewers":"486","coordinates":[7.4474400,46.9480900]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 22 } }
+{"marker-color":"#0f0","marker-size":"medium","marker-symbol":"","channel_login":"coliseoweb","geo":"AR","viewers":"310","coordinates":[-58.3772300,-34.6131500]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 23 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"therazorededge","geo":"IE","viewers":"281","coordinates":[-6.2488900,53.3330600]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 24 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"aliensandufos","geo":"CN","viewers":"198","coordinates":[116.3972300,39.9075000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 25 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"extra_film","geo":"IT","viewers":"196","coordinates":[12.5113300,41.8919300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 26 } }
+{"marker-color":"#0f0","marker-size":"medium","marker-symbol":"","channel_login":"ch4mpustream","geo":"CL","viewers":"125","coordinates":[-70.6482700,-33.4569400]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 27 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"pleasebegentle_","geo":"BE","viewers":"105","coordinates":[4.3487800,50.8504500]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 28 } }
+{"marker-color":"#0f0","marker-size":"medium","marker-symbol":"","channel_login":"lustlv","geo":"PR","viewers":"3","coordinates":[-68.5363900,-31.5375000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 29 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"snowbling01","geo":"PT","viewers":"3","coordinates":[-9.1333300,38.7166700]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 30 } }
+{"marker-color":"#f00","marker-size":"medium","marker-symbol":"","channel_login":"der_frost","geo":"AT","viewers":"3","coordinates":[16.3720800,48.2084900]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 31 } }
+{"marker-color":"#0f0","marker-size":"medium","marker-symbol":"","channel_login":"canalcncorientetv","geo":"CO","viewers":"3","coordinates":[-74.0817500,4.6097100]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 32 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"freejia_r","geo":"JP","viewers":"3","coordinates":[139.6917100,35.6895000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 33 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"sixbong","geo":"VN","viewers":"3","coordinates":[105.8411700,21.0245000]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 34 } }
+{"marker-color":"#f0f","marker-size":"medium","marker-symbol":"","channel_login":"ultiman3rd","geo":"NZ","viewers":"39","coordinates":[174.7755700,-41.2866400]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 35 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"saleh6449","geo":"SA","viewers":"2","coordinates":[46.7218500,24.6877300]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 36 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"tv24india","geo":"IN","viewers":"2","coordinates":[77.2244500,28.6357600]}
+{ "index" : { "_index" : "twitch", "_type" : "streamers", "_id" : 37 } }
+{"marker-color":"#ff0","marker-size":"medium","marker-symbol":"","channel_login":"izakooo","geo":"OM","viewers":"1","coordinates":[22.2244500,22.6357600]}
