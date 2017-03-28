@@ -433,3 +433,12 @@ Wynik zapytania w postaci pliku GeoJSON:
 
 <h6>Import danych z ![pliku]() JSON</h6>
 <code>curl -XPOST "localhost:9200/_bulk" --data-binary @C:/Users/PC/Desktop/nosql/elastic.json</code>
+
+## Zapytania do bazy danych
+
+## Point
+Tak jak w przypadku MongoDB zapytanie dotyczy streamerów, którzy mieszkają w odległości 500 mil od Gdańska.
+
+<code>curl -g -X GET "http://localhost:9200/twitch/streamers/_search?pretty=true" -d "{\"query\": { \"bool\" : { \"must\" : {\"match_all\" : {} },\"filter\" : { \"geo_distance\" : { \"distance\" : \"500mi\", \"coordinates\": [18.6463700,54.3520500] }}}}}"</code>
+
+Wynik zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/elastic/point.json).
