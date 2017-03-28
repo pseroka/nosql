@@ -1,0 +1,105 @@
+{
+  "took" : 10,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 5,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "22",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#0f0",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "coliseoweb",
+          "geo" : "AR",
+          "viewers" : "310",
+          "coordinates" : [
+            -58.37723,
+            -34.61315
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "26",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#0f0",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "ch4mpustream",
+          "geo" : "CL",
+          "viewers" : "125",
+          "coordinates" : [
+            -70.64827,
+            -33.45694
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "13",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#0f0",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "bigp4nda",
+          "geo" : "BR",
+          "viewers" : "1257",
+          "coordinates" : [
+            -47.92972,
+            -15.77972
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "28",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#0f0",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "lustlv",
+          "geo" : "PR",
+          "viewers" : "3",
+          "coordinates" : [
+            -68.53639,
+            -31.5375
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "31",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#0f0",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "canalcncorientetv",
+          "geo" : "CO",
+          "viewers" : "3",
+          "coordinates" : [
+            -74.08175,
+            4.60971
+          ]
+        }
+      }
+    ]
+  }
+}
