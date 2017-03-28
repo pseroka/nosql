@@ -450,7 +450,7 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 
 <h6>Wywołanie zapytania</h6>
 <code>curl -g -X GET "http://localhost:9200/twitch/streamers/_search?pretty=true" --data-binary @C:\Users\PC\Desktop\nosql\query2.txt</code>
-<br>
+<br><br>
 
 Wynik zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/elastic/polygon.json).
 
@@ -461,6 +461,10 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 
 <h6>Wywołanie zapytania</h6>
 <code>curl -g -X GET "http://localhost:9200/twitch/streamers/_search?pretty=true" --data-binary @C:\Users\PC\Desktop\nosql\query3.txt</code>
-<br>
+<br><br>
 
 Wynik zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/elastic/boundingbox.json).
+
+![Mapa](https://github.com/pseroka/nosql/blob/master/elastic/bound.geojson)
+
+![alt tag](https://github.com/pseroka/nosql/blob/master/photos/boundingbox.PNG)
