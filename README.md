@@ -1,7 +1,5 @@
 <h1>Technologie NoSQL</h1>
 
-projekt zaliczeniowy
-
 <p>Informacje o komputerze, na którym były wykonywane obliczenia:</p>
 
 <table>
@@ -95,15 +93,11 @@ Na potrzeby projektu zaimportowałam do PostgreSQL i MongoDB znalezioną w Inter
 <h6>Liczba rekordów</h6>
 <code>960987</code>
 
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/psql-count.PNG)
-
 <h6>Obliczenie czasu importu danych</h6>
 <code>\timing \copy myschema.twitch FROM 'C:/Users/PC/Desktop/nosql/twitch.csv' DELIMITER ',' CSV HEADER</code>
 
 <h6>Czas importu danych</h6>
 <code>40422,841 ms</code>
-
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/psql-czas.PNG)
 
 <h5>Agregacja 1. Liczba streamerów z każdego kraju</h5>
 <code>SELECT geo, COUNT(*) AS ile FROM myschema.twitch GROUP BY geo ORDER BY ile DESC;</code>
@@ -341,21 +335,17 @@ Na potrzeby projektu zaimportowałam do PostgreSQL i MongoDB znalezioną w Inter
 <h6>Liczba rekordów</h6>
 <code>960987</code>
 
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/mongo-count.PNG)
-
 <h6>Obliczenie czasu importu danych</h6>
 <code>powershell "Measure-Command{mongoimport -d nosql -c twitch --type csv --file C:\Users\PC\Desktop\nosql\twitch.csv --headerline}"</code>
 
 <h6>Czas importu danych</h6>
 <code>88939,597 ms</code>
 
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/mongo-czas.PNG)
-
 <h2>Mapy</h2>
 
 Do stworzenia mapy GeoJSON wykorzystałam narzędzie, które znajduje się pod adresem: http://geojson.io. Na potrzeby zadania za pomocą ![skryptu](https://github.com/pseroka/nosql/blob/master/geojson.js) napisanego w JavaScript wyznaczyłam 36 unikalnych rekordów ze streamerami z różnych krajów i zaznaczyłam je na mapie odmiennymi kolorami według schematu: kolor niebieski - Ameryka Północna, kolor zielony - Ameryka Południowa, kolor czerwony - Europa, kolor żółty - Azja, kolor różowy - Australia i Oceania.
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/streamers.geojson)
+![Zobacz mapę](https://github.com/pseroka/nosql/blob/master/streamers.geojson)
 
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/streamers.PNG)
 
@@ -376,6 +366,9 @@ Do stworzenia mapy GeoJSON wykorzystałam narzędzie, które znajduje się pod a
 ![alt tag](https://github.com/pseroka/nosql/blob/master/photos/twitchjson-example.PNG)
 
 ## Zapytania do bazy danych
+
+<h4>Wszystkie mapy można obejrzeć na stronie: https://pseroka.github.io/</h4>
+
 Aby móc tworzyć zapytania do bazy danych należało dodać do stworzonej wcześniej kolekcji geo-indeks.
 
 <code>db.twitchjson.ensureIndex({"geometry" : "2dsphere"})</code>
@@ -387,9 +380,7 @@ Zapytanie dotyczy streamerów, którzy mieszkają w odległości 500 mil (804,67
 
 Wynik zapytania:
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/gdansk.geojson)
-
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/gdansk.PNG)
+![Zobacz mapę](https://github.com/pseroka/nosql/blob/master/gdansk.geojson)
 
 ## Polygon
 Za pomocą narzędzia http://geojson.io stworzyłam obiekt Polygon o kształcie Ameryki Południowej i za jego pomocą sprawdziłam, którzy streamerzy mieszkają na terenie tego kontynentu.
@@ -400,9 +391,7 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 
 Wynik zapytania:
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/ameryka.geojson)
-
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/ameryka.PNG)
+![Zobacz mapę](https://github.com/pseroka/nosql/blob/master/ameryka.geojson)
 
 ## LineString
 Za pomocą narzędzia http://geojson.io stworzyłam obiekt LineString odzwierciedlający przebieg Wisły i sprawdziłam, którzy streamerzy mieszkają na przecięciu tego obiektu.
@@ -417,9 +406,7 @@ Wynik zapytania w bazie MongoDB:
 
 Wynik zapytania w postaci pliku GeoJSON:
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
-
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/linestring.PNG)
+![Zobacz mapę](https://github.com/pseroka/nosql/blob/master/wisla.geojson)
 
 ## Elasticsearch
 
@@ -465,6 +452,4 @@ Kod źródłowy zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/
 
 Wynik zapytania dostępny w ![pliku](https://github.com/pseroka/nosql/blob/master/elastic/boundingbox.json).
 
-![Mapa](https://github.com/pseroka/nosql/blob/master/elastic/bound.geojson)
-
-![alt tag](https://github.com/pseroka/nosql/blob/master/photos/boundingbox.PNG)
+![Zobacz mapę](https://github.com/pseroka/nosql/blob/master/elastic/bound.geojson)
