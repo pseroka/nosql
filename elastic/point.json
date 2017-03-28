@@ -1,0 +1,123 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 6,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "14",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#f00",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "guardsmanbob",
+          "geo" : "DK",
+          "viewers" : "1136",
+          "coordinates" : [
+            12.56553,
+            55.67594
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "30",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#f00",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "der_frost",
+          "geo" : "AT",
+          "viewers" : "3",
+          "coordinates" : [
+            16.37208,
+            48.20849
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "4",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#f00",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "officialfriberg",
+          "geo" : "SE",
+          "viewers" : "4203",
+          "coordinates" : [
+            18.0649,
+            59.33258
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "6",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#00f",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "brunecia",
+          "geo" : "PL",
+          "viewers" : "2309",
+          "coordinates" : [
+            21.01178,
+            52.22977
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "16",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#f00",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "willywonka_hc",
+          "geo" : "NO",
+          "viewers" : "838",
+          "coordinates" : [
+            10.74609,
+            59.91273
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "3",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#f00",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "savjz",
+          "geo" : "FI",
+          "viewers" : "4298",
+          "coordinates" : [
+            24.93545,
+            60.16952
+          ]
+        }
+      }
+    ]
+  }
+}
