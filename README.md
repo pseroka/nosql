@@ -424,3 +424,9 @@ Wynik zapytania w postaci pliku GeoJSON:
 ## Elasticsearch
 
 ![Plik](https://github.com/pseroka/nosql/blob/master/elastic/mapp.json) z wykonanym mappingiem danych.
+
+<h6>Utworzenie indeksu "twitch"</h6>
+<code>curl -XPUT "localhost:9200/twitch"</code>
+
+<h6>Ustawienie mapping typu "streamers"</h6>
+<code>curl -XPUT "localhost:9200/twitch/_mapping/streamers" --data-binary @C:\Users\PC\Desktop\nosql\mapp.json</code>
