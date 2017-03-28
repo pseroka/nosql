@@ -1,0 +1,69 @@
+{
+  "took" : 14,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 3,
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "5",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#00f",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "mushisgosu",
+          "geo" : "CA",
+          "viewers" : "3175",
+          "coordinates" : [
+            -75.69812,
+            45.41117
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "2",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#00f",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "crs_saintvicious",
+          "geo" : "US",
+          "viewers" : "11507",
+          "coordinates" : [
+            -74.00597,
+            40.71427
+          ]
+        }
+      },
+      {
+        "_index" : "twitch",
+        "_type" : "streamers",
+        "_id" : "20",
+        "_score" : 1.0,
+        "_source" : {
+          "marker-color" : "#00f",
+          "marker-size" : "medium",
+          "marker-symbol" : "",
+          "channel_login" : "reebok170",
+          "geo" : "MX",
+          "viewers" : "649",
+          "coordinates" : [
+            -99.12766,
+            19.42847
+          ]
+        }
+      }
+    ]
+  }
+}
